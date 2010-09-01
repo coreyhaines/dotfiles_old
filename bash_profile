@@ -42,6 +42,8 @@ alias gco='git checkout'
 alias gca='git commit -v -a'
 alias ga='git add'
 
+alias rvmrc="echo 'rvm use $1' > .rvmrc"
+
 export GEMDIR=`gem env gemdir`
 set -o vi
 
