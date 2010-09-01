@@ -144,3 +144,12 @@ fi
 if [[ -s /Users/coreyhaines/.rvm/scripts/rvm ]] ; then source /Users/coreyhaines/.rvm/scripts/rvm ; fi
 
 date
+
+##
+# Your previous /Users/coreyhaines/.bash_profile file was backed up as /Users/coreyhaines/.bash_profile.macports-saved_2010-08-16_at_10:21:32
+##
+
+# MacPorts Installer addition on 2010-08-16_at_10:21:32: adding an appropriate PATH variable for use with MacPorts.
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+# Finished adapting your PATH environment variable for use with MacPorts.
+
