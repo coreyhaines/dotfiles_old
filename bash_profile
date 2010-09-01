@@ -9,6 +9,9 @@ export HISTSIZE=10000
 
 shopt -s histappend
 
+alias ding="say 'ding'"
+
+alias d="cd ~/Documents"
 alias p="cd ~/Documents/codes"
 alias b="cd ~/Documents/blog\ entries"
 
