@@ -19,16 +19,18 @@ alias m="cd ~/Documents/codes/mercuryapp-staging"
 alias vp='mvim ~/.bash_profile'
 alias sp='source ~/.bash_profile'
 
-alias console='ruby script/console'
-alias server='ruby script/server'
-alias ss='ruby script/server'
-alias c='ruby script/console'
-alias rk='rake'
+alias console='rails s'
+alias server='rails s'
+alias ss='rails s'
+alias c='rails c'
 
 alias f='cucumber -p focus'
+alias be='bundle exec'
+
+alias rk='rake'
+alias r="rake routes | grep $1"
 alias ok='rake cucumber:ok'
 alias rs='rake spec'
-alias r="rake routes | grep $1"
 alias dbmt='rake db:migrate && rake db:test:prepare'
 
 alias ls="/bin/ls -a"
@@ -44,6 +46,11 @@ alias gca='git commit -v -a'
 alias ga='git add'
 
 alias rvmrc="echo 'rvm use $1' > .rvmrc"
+
+set list listchars=tab:\ \ ,trail:·
+
+export HISTIGNORE="fg*"
+bind '"\C-f": "fg %-\n"'
 
 export GEMDIR=`gem env gemdir`
 set -o vi
