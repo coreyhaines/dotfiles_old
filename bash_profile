@@ -98,7 +98,7 @@ function proml {
     ;;
   esac
 
-PS1="\$(~/.rvm/bin/rvm-prompt)$GREEN\$(parse_git_branch)$BLACK\$ "
+PS1="$GREEN\$(parse_git_branch)$BLACK\$ "
 PS2='> '
 PS4='+ '
 }
