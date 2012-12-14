@@ -25,14 +25,15 @@ alias server='rails s'
 alias ss='rails s'
 alias c='rails c'
 
-alias f='cucumber -p focus'
-alias be='bundle exec'
-
 alias rk='rake'
 alias r="rake routes | grep $1"
 alias ok='rake cucumber:ok'
 alias rs='rake spec'
 alias dbmt='rake db:migrate && rake db:test:prepare'
+alias spn="time rspec -I lib/mercury_app/ -I spec_no_rails/"
+alias spna="time rspec -I lib/mercury_app/ -I spec_no_rails/ spec_no_rails"
+alias rspec="time rspec"
+alias rake="time rake"
 
 alias ls="/bin/ls -a"
 alias rmdir="/bin/rm -fdr"
