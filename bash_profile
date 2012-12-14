@@ -15,6 +15,7 @@ alias d="cd ~/Documents"
 alias p="cd ~/Documents/codes"
 alias b="cd ~/Documents/blog\ entries"
 alias m="cd ~/Documents/codes/mercuryapp-staging"
+alias ma="cd ~/Dropbox/mercury_app"
 
 alias vp='mvim ~/.bash_profile'
 alias sp='source ~/.bash_profile'
