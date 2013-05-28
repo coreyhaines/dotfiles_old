@@ -22,7 +22,7 @@ alias ma="cd ~/Dropbox/mercury_app"
 alias vp='mvim ~/.bash_profile'
 alias sp='source ~/.bash_profile'
 
-alias console='rails s'
+alias console='rails c'
 alias server='rails s'
 alias ss='rails s'
 alias c='rails c'
