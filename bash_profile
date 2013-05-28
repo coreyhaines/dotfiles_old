@@ -2,6 +2,7 @@ export PATH=/opt/local/bin/:$PATH
 export PATH=/usr/local/mysql/bin/:$PATH
 export PATH=/Library/PostgreSQL/8.4/bin/:$PATH
 export PATH=/Users/coreyhaines/.gem/ruby/1.8/bin:$PATH
+export PATH=$HOME/Library/Haskell/bin:$PATH
 export EDITOR='mvim -f'
 
 export HISTCONTROL=erasedups
@@ -13,6 +14,7 @@ alias ding="say 'ding'"
 
 alias d="cd ~/Documents"
 alias p="cd ~/Documents/codes"
+alias e="cd ~/Documents/codes"
 alias b="cd ~/Documents/blog\ entries"
 alias m="cd ~/Documents/codes/mercuryapp-staging"
 alias ma="cd ~/Dropbox/mercury_app"
@@ -34,6 +36,7 @@ alias spn="time rspec -I lib/mercury_app/ -I spec_no_rails/"
 alias spna="time rspec -I lib/mercury_app/ -I spec_no_rails/ spec_no_rails"
 alias rspec="time rspec"
 alias rake="time rake"
+alias cucumber="time cucumber"
 
 alias ls="/bin/ls -a"
 alias rmdir="/bin/rm -fdr"
@@ -49,7 +52,15 @@ alias ga='git add'
 
 alias rvmrc="echo 'rvm use $1' > .rvmrc"
 
+alias postgres_start='pg_ctl -D /usr/local/var/postgres -l /usr/local/var/postgres/server.log start'
+alias postgres_stop='pg_ctl -D /usr/local/var/postgres stop -s -m fast'
+
+function cukes {
+  cucumber --drb $*
+}
+
 set list listchars=tab:\ \ ,trail:·
+
 
 export HISTIGNORE="fg*"
 bind '"\C-f": "fg %-\n"'
@@ -98,7 +109,8 @@ function proml {
     ;;
   esac
 
-PS1="$GREEN\$(parse_git_branch)$BLACK\$ "
+# PS1="$GREEN\$(parse_git_branch)$BLACK\$ "
+PS1="🐈 $GREEN\$(parse_git_branch)$BLACK\$ "
 PS2='> '
 PS4='+ '
 }
@@ -155,11 +167,7 @@ if [[ -s /Users/coreyhaines/.rvm/scripts/rvm ]] ; then source /Users/coreyhaines
 
 date
 
-##
-# Your previous /Users/coreyhaines/.bash_profile file was backed up as /Users/coreyhaines/.bash_profile.macports-saved_2010-08-16_at_10:21:32
-##
 
 # MacPorts Installer addition on 2010-08-16_at_10:21:32: adding an appropriate PATH variable for use with MacPorts.
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
-
